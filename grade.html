@@ -1,0 +1,38 @@
+
+
+<input type="text"value="76"id="txtN1">
+<input type="text"value="67"id="txtN2">
+<input type="text"value=""id="txtN3">
+<input type="button" value="Click"onclick="">
+<script src="grade.js"></script>
+<script>
+var num1=num2=null;
+try{
+    num1=txtN1.value;
+    num2=txtN2.value;
+    var marks={
+        sub1:num1,
+        sub2:num2
+    };
+    var newMarks = processStudent(marks)
+    console.log(newMarks);
+    txtN3.value=newMarks.total;
+    /*
+    num1=txtN1.value;
+    num2=txtN2.value;
+    var marks={
+        sub1:num1,
+        sub2:num2
+    };
+    processStudentV2(marks);
+    console.log(Marks);
+    */
+}
+catch(ex){
+alert("Error"+ex);
+}
+
+
+
+
+</script>

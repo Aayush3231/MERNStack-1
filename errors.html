@@ -1,0 +1,91 @@
+<html>
+    <head>
+<script src="myscript1.JS"></script>
+    </head>
+<body>
+    <div id="message">NA</div>
+    <div id="message2">NA</div><br>
+
+<script>
+    //window.alert("hello";-->//Uncaught SyntaxError: missing ) after argument list
+    //window.alert(hello);--->//Uncaught ReferenceError: hello is not defined
+    //window.alert('hello');
+    //window.show();//-->//Uncaught TypeError: window.show is not a function
+    /*
+    //program to add two no---->logical error
+    var n1=9;
+    var n2=9;
+    var n3=null;
+    n3=n1*n2;
+    console.log(n3);
+    */
+   /*
+  // -->declare
+   try{
+       //input,process output
+    //code that my throw an error
+   }
+   catch(ex){
+       //error message
+    //code to be executed if an error occurs
+   }
+   finally{
+       //free(declare)null
+       //code to be executed regardless of an error occurs or not
+   }
+   */
+  /*
+  //declare
+  var n1=null;
+  var n2=null;
+  var n3=null;
+  //
+  try{
+    n1=10; //input
+    n2=0;
+      n3=n1/n2;// process
+      console.log(n3);//output
+  }
+  catch(ex){
+      console.log(ex);//error message
+  }
+  finally{
+    n1=null;
+    n2=null;
+    n3=null;
+  }
+*/
+/*var n1=null;
+var n2=null;
+var n3=null;
+*/
+/*
+try{
+    var result= Sum(10,20);//sum is not defined yet
+    document.getElementById("message").innerHTML=result;
+    
+}
+catch(ex){
+    document.getElementById("message").innerHTML=ex;
+}
+finally{
+    document.getElementById("message2").innerHTML="finally block is executed";
+}
+*/
+try{
+    var result=Sum(10,20);
+    document.getElementById("message").innerHTML=result;
+    throw"error occured";//validation // use if statements
+}
+catch(ex){
+    alert(ex);
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>
